@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+* {
+    font-family: "Outfit", sans-serif;
+  }
+
+input:focus,
+input:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px none inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
