@@ -23,6 +23,7 @@ app.use(cookieParser());
 
 //to avoid undefined
 app.use(cors({
+  origin:'http://localhost:5173',
   credentials: true
 }));
 

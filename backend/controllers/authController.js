@@ -222,9 +222,9 @@ export const resetOtp = async(req,res) =>{
 
 
 // verify the otp and rest the password
-export const resetPassword = async (req, res) => { 
-        const { email, otp , newpassword } = req.body
-        if (!email || !otp || !newpassword) {
+export const newPassword = async (req, res) => { 
+     const { email, otp , newpassword } = req.body
+     if (!email || !otp || !newpassword) {
         return res.json({ success: false, message: "please provide email , otp, newpassword" })
         }   
      try {
