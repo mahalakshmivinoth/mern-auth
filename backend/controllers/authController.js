@@ -239,7 +239,7 @@ export const newPassword = async (req, res) => {
             return res.json({ success: false, message: "OTP Already Expired" })
         }
         const hashedPassword = await bcrypt.hash(newpassword, 10); //encrypt the password, to store password in the database
-        user.newpassword = hashedPassword;
+        user.password = hashedPassword;
         user.resetOtp = '';
         user.resetOtpExpireAt = 0;
         await user.save();

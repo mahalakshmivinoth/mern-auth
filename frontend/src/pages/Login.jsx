@@ -78,7 +78,7 @@ const Login = () => {
                     </div>
                     <div className='mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C] text-white'>
                         <img src={assets.lock_icon} alt='' />
-                        <input type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
+                        <input type='password' placeholder='Password' value={password} autoComplete="current-password" onChange={(e) => setPassword(e.target.value)} required />
                     </div>
                     <p className='mb-4 text-indigo-500 cursor-pointer'>Forgot Password ?</p>
                     <button className='w-full py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-indigo-900 font-medium text-white'>{state}</button>

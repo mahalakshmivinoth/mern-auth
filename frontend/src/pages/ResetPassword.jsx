@@ -160,7 +160,7 @@ const ResetPassword = () => {
 
           <div className='mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C] text-white'>
             <img src={assets.lock_icon} alt='' />
-            <input type='password' placeholder='New Password' value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
+            <input type='password' placeholder='New Password' autoComplete="new-password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} required />
           </div>
           <button className='w-full py-3 rounded-full bg-gradient-to-r from-indigo-500 to-indigo-900 font-medium text-white cursor-pointer mt-2'>Submit</button>
 
